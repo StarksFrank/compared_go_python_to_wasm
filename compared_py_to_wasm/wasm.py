@@ -1,7 +1,7 @@
 # wasm.py
 #
 
-from .model import *
+from compared_py_to_wasm.models.model import *
 from collections import ChainMap
 from contextlib import contextmanager
 
@@ -356,8 +356,8 @@ def generate_lhs(location, value, mod):
     return None
     
 def main(filename):
-    from .parse import parse_file
-    from .typecheck import check_program
+    from compared_py_to_wasm.parses.parse import parse_file
+    from compared_py_to_wasm.types.typecheck import check_program
     model = parse_file(filename)
     if check_program(model):
         mod = generate_program(model)

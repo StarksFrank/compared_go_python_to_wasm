@@ -2,15 +2,13 @@
 
 #
 
-from .model import *
-
 def transform(node):
     # Return the node back (unmodified) or a new node in its place
     return node
 
 # Main function (for testing)
 def main(filename):
-    from .parse import parse_file
+    from compared_py_to_wasm.parses.parse import parse_file
     model = parse_file(filename)
     model = transform(model)
     print(model)

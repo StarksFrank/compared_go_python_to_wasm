@@ -2,8 +2,7 @@
 #
 
 
-from .model import *
-from .parse import lineno
+from compared_py_to_wasm.models.model import *
 
 from collections import ChainMap
 
@@ -33,7 +32,7 @@ def interpret_lhs(node, value, context, next):
 
 
 if __name__ == '__main__':
-    import sys
+    pass
 
     
 

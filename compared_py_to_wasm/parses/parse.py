@@ -2,8 +2,8 @@
 #
 
 
-from .model import *
-from .tokenize import tokenize
+from compared_py_to_wasm.models.model import *
+from compared_py_to_wasm.tokens.tokenize import tokenize
 
 # Line number tracking
 _line_numbers = { }

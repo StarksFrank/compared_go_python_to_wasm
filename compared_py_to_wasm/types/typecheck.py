@@ -1,8 +1,8 @@
 # typecheck.py
 #
 
-from .model import *
-from .parse import lineno
+from compared_py_to_wasm.models.model import *
+from compared_py_to_wasm.parses.parse import lineno
 from collections import ChainMap
 from contextlib import contextmanager
 
@@ -251,7 +251,7 @@ def check_lhs(node, valuetype, context):
     
 # Sample main program
 def main(filename):
-    from .parse import parse_file
+    from compared_py_to_wasm.parses.parse import parse_file
     model = parse_file(filename)
     check_program(model)
 
